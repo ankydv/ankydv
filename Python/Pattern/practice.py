@@ -15,6 +15,9 @@ def flip_pyramid(n):
         print("")
         
     
-n=int(input("Please enter the number of rows"))
-pyramid(int(n/2)+1)
-flip_pyramid(n-(int(n/2)+1))
+n=int(input("Please enter the number of rows "))
+if not n%2==0:
+    pyramid(int(n/2)+1)
+    flip_pyramid(n-(int(n/2)+1))
+else:
+    print("Please enter an odd number of rows")
