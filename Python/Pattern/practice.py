@@ -11,9 +11,10 @@ def flip_pyramid(n):
         for j in range(i+1):
             print("  ",end="")
         for k in range(2*n-1-2*i):
-            print("* ")
+            print("* ",end="")
         print("")
         
     
 n=int(input("Please enter the number of rows"))
-flip_pyramid(n)
+pyramid(int(n/2)+1)
+flip_pyramid(n-(int(n/2)+1))
