@@ -1,15 +1,15 @@
 #include<stdio.h>
 
 void display(int*,int,int );
-void merge_sort(int*,int s,int e);
-void merge(int *a,int s, int m, int e);
+void merge_sort(int*,int,int);
+void merge(int*,int, int, int);
 
 int main(){
 printf("Welcome to Merge Sort Algorithm");
 int n,i,arr[100];
-printf("\nEnter the size of array");
+printf("\nEnter the size of array : ");
 scanf("%d",&n);
-printf("\nEnter all the elements of the array");
+printf("\nEnter all the elements of the array\n");
 for(i=0;i<n;i++){
     scanf("%d",&arr[i]);
 }
