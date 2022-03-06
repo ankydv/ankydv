@@ -1,4 +1,3 @@
-//Not Completed to run Yet
 //QuickSort Program by Ankit Yadav 06/03/2022
 
 #include <stdio.h>
@@ -37,7 +36,7 @@ void QuickSort(int arr[],int s,int e){
     
 
 int partition(int arr[],int s, int e){
-    int p = s , i = s+1 , j = e;
+    int p = s , i = s , j = e;
     while(1){
         while(arr[i]<=arr[p]){
             i++;
@@ -46,13 +45,13 @@ int partition(int arr[],int s, int e){
             j--;
         }
         if(i>=j){
-            swap(arr,i,p);
+            swap(arr,j,p);
             break;
         }
         else
             swap(arr,i,j);
     }
-    return i;
+    return j;
 }
 
 void display(int p[],int n){
@@ -68,4 +67,3 @@ void swap(int a[] , int x , int y){
     a[x] = a[y];
     a[y] = temp;
 }
-
