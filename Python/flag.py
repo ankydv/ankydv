@@ -1,3 +1,5 @@
+#Created by Ankit Yadav on 15/08/2022 
+
 import turtle
 t=turtle.Turtle()
 turtle.bgcolor('white')
@@ -6,6 +8,8 @@ l=850
 b=l*2/9
 R=b/2
 t.speed(5)
+
+#Start of creating function for chakra
 def getpright(l):
     t.right(90)
     t.penup()
@@ -86,8 +90,9 @@ t.penup()
 t.setpos(-800,-450)
 t.left(90)
 t.pendown()
+#End of chakra
 
-    
+ #code for flag tricolour   
 for j in range(3):
     for i in range(1,6):
         if i%2==1:
@@ -98,11 +103,11 @@ for j in range(3):
             else:
                 if i==1:
                     if j==0:
-                        t.fillcolor('#FF9933')
+                        t.fillcolor('#FF9933')   #saffron
                     elif j==1:
-                        t.fillcolor('white')
+                        t.fillcolor('white')     #white
                     else:
-                        t.fillcolor('#138808')
+                        t.fillcolor('#138808')   #india green
                     t.begin_fill()
                 t.fd(l)
                 t.right(90)
@@ -115,7 +120,7 @@ for j in range(3):
             else:
                 t.right(90)
             i+=1
-
+#Setting position for chakra
 t.penup()
 r = R/8
 t.fd(l/2+r)
@@ -123,8 +128,9 @@ t.left(90)
 t.fd(b+R)
 t.pendown()
 t.speed(0)
-chakra(R,24,R/500)
+chakra(R,24,R/500)      #calling chakra function to design it
 
+#setting positions for Alphabets
 t.penup()
 t.goto(50,-400)
 t.left(360/48)
@@ -136,10 +142,11 @@ w = 65
 d = 20
 
 t.pensize(10)
-t.pencolor("#FF9933")
+t.pencolor("#FF9933")  
 
 begin = t.pos()
  
+    #Defining each alphabet function and calling it
 def H():
     t.fd(l)
     t.penup()
