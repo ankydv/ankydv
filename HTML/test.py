@@ -1,5 +1,5 @@
 def func1(): 
-    pass
+    return 6
 
 def func2():
     pass
